@@ -10,7 +10,7 @@ services:
     volumes:
       - ./nginx/hosts:/etc/nginx/conf.d
       - ./nginx/www:/var/www
-      - ./nginx/logs:/var/log/nginx
+      - /var/log/nginx:/var/log/nginx
       - ./nginx/certbot/conf:/etc/letsencrypt
       - ./nginx/certbot/www:/var/www/certbot
     links:
